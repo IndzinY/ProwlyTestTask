@@ -1,0 +1,106 @@
+Test Cases for Scenario A: Searching for "Prowly" on google.com, filtering by content category:
+
+1. Id: TC_A_01
+   Module: Google Search
+   Sub-module: Content Category Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Smoke
+   Name: Standard Search
+   Preconditions: User is on the Google homepage.
+   Steps:
+      1. Enter "prowly" into the search bar.
+         - Expected Result: The search query "prowly" is entered.
+      2. Click on the "Google Search" button or press "Enter".
+         - Expected Result: Google displays a list of search results for "prowly," including all content types.
+   Status: [Pass/Fail]
+   Comments: This test case represents the typical user behavior.
+
+2. Id: TC_A_02
+   Module: Google Search
+   Sub-module: Content Category Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Critical Path
+   Name: News Content from "Filters and topics" area
+   Preconditions: User is on the Google page with search results for "prowly".
+   Steps:
+      1. Click on the "News" filter from the suggested "Filters and topics" (under the search bar).
+         - Expected Result: The "News" filter is selected.
+         - Expected Result: Google displays recent news articles or updates related to "prowly."
+   Status: [Pass/Fail]
+   Comments: This test case examines the news content filtering.
+   
+3. Id: TC_A_03
+   Module: Google Search
+   Sub-module: Content Category Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Critical Path
+   Name: Videos Content from "All filters" dropdown
+   Preconditions: User is on the Google page with search results for "prowly".
+   Steps:
+      1. Click on the "All filters" dropdown.
+		 - Expected Result: A dropdown menu with all filter options is displayed.
+	  2. Click on the "Videos" filter.
+		 - Expected Result: The "Videos" filter is selected.
+         - Expected Result: Google displays video content related to "prowly," including product demos, interviews, or promotional videos.
+   Status: [Pass/Fail]
+   Comments: This test case checks the video content filtering.
+
+Test Cases for Scenario B: Searching for the word "prowly" on google.com with filtering by date:
+
+4. Id: TC_B_01
+   Module: Google Search
+   Sub-module: Date Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Critical Path
+   Name: Past year Results
+   Preconditions: User is on the Google page with search results for "prowly".
+   Steps:
+      1. Click on the "Tools" option.
+         - Expected Result: The "Tools" option is selected.
+		 - Expected Result: The "Any time" and "All results" dropdowns are displayed.
+      2. Select "Past year" from the "Any time" dropdown.
+         - Expected Result: "Past year" is selected from the dropdown.
+		 - Expected Result: The selected time frame should be displayed in the search tools, indicating that the search results are filtered to show content from the past year.
+         - Expected Result: Google correctly retrieves and displays the most recent and up-to-date information related to "prowly from the past year.
+   Status: [Pass/Fail]
+   Comments: This test case evaluates past year results.
+
+5. Id: TC_B_02
+   Module: Google Search
+   Sub-module: Date Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Critical Path
+   Name: Recent Results
+   Preconditions: User is on the Google page with search results for "prowly".
+   Steps:
+      1. Click on the "Tools" option.
+         - Expected Result: The "Tools" option is selected.
+		 - Expected Result: The "Any time" and "All results" dropdowns are displayed. 
+      2. Select "Past 24 hours" from the "Any time" dropdown.
+         - Expected Result: "Past 24 hours" is selected from the dropdown.
+		 - Expected Result: The selected time frame should be displayed in the search tools, indicating that the search results are filtered to show content from the past 24 hours.
+         - Expected Result: Google correctly filters the search results to display the most recent results related to "Prowly" from the past 24 hours.
+   Status: [Pass/Fail]
+   Comments: This test case focuses on the most recent results related to "Prowly" from the past 24 hours.
+
+6. Id: TC_B_03
+   Module: Google Search
+   Sub-module: Date Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Critical Path
+   Name: Custom Date Range
+   Preconditions: User is on the Google page with search results for "prowly".
+   Steps:
+      1. Click on the "Tools" option.
+         - Expected Result: The "Tools" option is selected.
+		 - Expected Result: The "Any time" and "All results" dropdowns are displayed.
+      2. Select "Custom range..." from the "Any time" dropdown.
+         - Expected Result: "Customised date range" pop-up is displayed.
+      3. Specify the date range (e.g., June 1, 2022 - August 31, 2022).
+         - Expected Result: The date range is specified from 6/1/2022 to 8/31/2022.
+      4. Click on the "Go" button.
+		 - Expected Result: User-defined time period is displayed in the "Any time".
+		 - Expected Result: The selected time frame should be displayed in the search tools, indicating that the search results are filtered to show content from the user-defined time period.
+         - Expected Result: Google correctly retrieves and displays results from the user-defined time period.
+   Status: [Pass/Fail]
+   Comments: This test case assesses custom date range filtering.
