@@ -82,3 +82,25 @@ Test Cases for Scenario B: Searching for the word "prowly" on google.com with fi
          - Expected Result: Google correctly filters the search results to display the most recent results related to "Prowly" from the past 24 hours.
    Status: [Pass/Fail]
    Comments: This test case focuses on the most recent results related to "Prowly" from the past 24 hours.
+
+6. Id: TC_B_03
+   Module: Google Search
+   Sub-module: Date Filter
+   Link to Requirements: [Link to requirement ID or document]
+   Priority: Critical Path
+   Name: Custom Date Range
+   Preconditions: User is on the Google page with search results for "prowly".
+   Steps:
+      1. Click on the "Tools" option.
+         - Expected Result: The "Tools" option is selected.
+		 - Expected Result: The "Any time" and "All results" dropdowns are displayed.
+      2. Select "Custom range..." from the "Any time" dropdown.
+         - Expected Result: "Customised date range" pop-up is displayed.
+      3. Specify the date range (e.g., June 1, 2022 - August 31, 2022).
+         - Expected Result: The date range is specified from 6/1/2022 to 8/31/2022.
+      4. Click on the "Go" button.
+		 - Expected Result: User-defined time period is displayed in the "Any time".
+		 - Expected Result: The selected time frame should be displayed in the search tools, indicating that the search results are filtered to show content from the user-defined time period.
+         - Expected Result: Google correctly retrieves and displays results from the user-defined time period.
+   Status: [Pass/Fail]
+   Comments: This test case assesses custom date range filtering.
